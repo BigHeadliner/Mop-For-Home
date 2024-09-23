@@ -27,6 +27,7 @@
        grid-template-columns: repeat(4, 1fr); 
        grid-template-rows: repeat(2, auto); 
        gap: 40px; 
+       justify-content: center;
    }
      
    &__card{ 
@@ -40,7 +41,14 @@
         background-color: #F7F8FB; 
         border-radius: 16px; 
         margin-bottom: 20px;
-    } 
+    }  
+     
+    &__card-img{ 
+        cursor: pointer; 
+        width: 240px; 
+        height: 317px; 
+        object-fit: cover; 
+    }
      
    &__card-title{ 
       @extend %helvetica-neue-700; 
