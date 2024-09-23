@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('HelveticaNeue-Regular'),
+        url('../fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueRegular.woff') format('woff');
+    font-display: swap;
+} 
+ 
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('HelveticaNeue-Medium'),
+        url('../fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueMedium.woff') format('woff');
+    font-display: swap;
+} 
+ 
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('HelveticaNeue-Bold'),
+        url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Bold.woff') format('woff');
+    font-display: swap;
+}  
+ 
+@font-face {
+    font-family: 'Avenir-Roman';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Avenir-Roman'),
+        url('../fonts/Avenir-Roman.woff2') format('woff2'),
+        url('../fonts/Avenir-Roman.woff') format('woff');
+    font-display: swap;
+}
+ 
+@font-face {
+    font-family: 'Avenir-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Avenir-Medium'),
+        url('../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir-Medium.woff') format('woff');
+    font-display: swap;
+} 
+ 
+@font-face {
+    font-family: 'Avenir-Black';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Avenir-Black'),
+        url('../fonts/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/Avenir-Black.woff') format('woff');
+    font-display: swap;
+}
+

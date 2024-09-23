@@ -1,0 +1,15 @@
+ 
+  
+body { 
+    @extend %helvetica-neue-400;
+    font-size: 20px;
+    line-height: 150%; 
+    color: #000; 
+}  
+ 
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px; 
+    border: 1px solid green;   
+}  
