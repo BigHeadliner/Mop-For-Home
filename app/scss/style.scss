@@ -27,7 +27,8 @@
        grid-template-columns: repeat(4, 1fr); 
        grid-template-rows: repeat(2, auto); 
        gap: 40px; 
-       justify-content: center;
+       justify-content: center; 
+       margin-bottom: 120px;
    }
      
    &__card{ 
@@ -82,6 +83,79 @@
     @extend %helvetica-neue-700; 
     color:#000;
    }
+} 
+
+.faq{  
+     
+  &__inner{ 
+    display: flex; 
+    justify-content: space-between;
+  }
+     
+   &__text{ 
+     width: 100%; 
+     max-width: 600px;
+   }  
+    
+   &__questions{ 
+     width: 100%; 
+     max-width: 640px;
+   }  
+    
+   &__title{ 
+     @extend %helvetica-neue-700; 
+     font-size: 40px; 
+     margin-bottom: 23px;
+   } 
+    
+   &__link{ 
+     @extend %helvetica-neue-400; 
+     font-size: 20px; 
+     color:#000; 
+     text-decoration: underline;
+   } 
+    
+   &__question{ 
+     border-radius: 12px; 
+     background-color: #F7F8FB; 
+     border: 1px solid sandybrown; 
+     transition:  0.8s linear;
+   } 
+    
+   &__question-top{ 
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center;
+   } 
+    
+   /* Сховати контент спочатку */
+ &__question-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0; 
+    transition: 0.8s linear; 
+  }
+  
+  /* Стили для відкритого контенту */
+  &__question-content.open {
+    display: block;
+    max-height: 200px; /* Задай максимальну висоту під свій контент */
+    opacity: 1;
+  }
+  
+  /* Іконка плюс буде видимою за замовчуванням */
+  &__icon-plus {
+    display: block;
+  }
+  
+  /* Іконка мінус спочатку схована */
+  &__icon-minus {
+    display: none;
+  }
+  
+
 }
 
  
