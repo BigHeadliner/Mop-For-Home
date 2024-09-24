@@ -1,4 +1,24 @@
- 
+  
+   
+ @media(max-width:1389px) {   
+     
+    // faq
+
+    .faq__inner{ 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    } 
+     
+    .faq__title{ 
+        margin-bottom: 25px;
+    } 
+     
+    .faq__text{ 
+        margin-bottom: 19px;
+    }
+
+ }  
   
 @media(max-width:1190px) {     
      
@@ -23,14 +43,49 @@
         gap: 30px;
     } 
 
+ }  
+  
+ @media(max-width:701px) {    
+     
+    .faq__title{ 
+        line-height: 109%;
+    } 
+     
+    .faq__question-title{
+        font-size: 17px;
+    } 
+     
+    .faq__question-text{  
+        font-size: 15px;
+    }
+
  } 
   
- @media(max-width:538px) {    
+ @media(max-width:595px) {     
+     
+    // faq
+     
+    .faq__question-title{ 
+       font-size: 15px; 
+    }
+
+ } 
+
+
+  
+ @media(max-width:538px) {   
+     
+    // container 
+
+    .container {
+        padding: 0 20px; 
+    }
      
     // featured-products 
      
      
-    .featured-products__title {
+    .featured-products__title, 
+    .faq__title {
         font-size: 35px;
         margin-bottom: 20px; 
     } 
@@ -45,15 +100,17 @@
 
  } 
   
-  
- @media(max-width:538px) {    
+   
+ @media(max-width:448px) {    
      
-    // container 
-
-    .container {
-        padding: 0 20px; 
+    // faq
+     
+    .faq__icon-plus, 
+    .faq__icon-minus{ 
+        margin-left: 15px;
     }
- }  
+
+ }
 
   
  @media(max-width:400px) {   
@@ -62,13 +119,23 @@
      
     .featured-products__text {
         margin-bottom: 39px; 
+    }  
+     
+    // faq
+     
+    .faq__text{ 
+        font-size: 17px;
     }
 
  } 
   
  @media(max-width:378px) {    
      
-    // featured-products
+    // featured-products 
+     
+    .featured-products__cards { 
+        margin-bottom: 100px;
+    }
      
     .featured-products__title{  
         font-size: 32px; 
@@ -98,6 +165,46 @@
     .featured-products__price-was, 
     .featured-products__price-now{ 
         font-size: 14px;
+    } 
+     
+    // faq   
+     
+    .faq{ 
+        margin-bottom: 30px;
     }
+     
+    .faq__question{ 
+        margin-bottom: 10px;
+    }
+     
+    .faq__title{ 
+        font-size: 24px; 
+        margin-bottom: 10px;
+    } 
+     
+    .faq__text, 
+    .faq__link{ 
+        font-size: 14px; 
+        margin-bottom: 40px;
+    } 
+     
+    .faq__question-title{ 
+        font-size: 16px; 
+        line-height: 150%;
+    }  
+     
+    .faq__question-text{ 
+        font-size: 14px;
+    }
+      
+    .faq__icon-plus, 
+    .faq__icon-minus{ 
+        margin-left: 109px;
+    } 
+     
+    .faq__question-top{ 
+        margin-bottom: 8px;
+    }
+
 
  }
