@@ -32,7 +32,7 @@
    }
      
    &__card{ 
-      border: 1px solid rebeccapurple; 
+      border: 1px solid transparent; 
       width: 100%; 
       max-width: 300px;
    }
@@ -118,7 +118,7 @@
    &__question{ 
      border-radius: 12px; 
      background-color: #F7F8FB;
-     border: 1px solid sandybrown; 
+     border: 1px solid transparent; 
      transition:  0.8s linear; 
      padding: 15px 20px; 
      margin-bottom: 20px;
