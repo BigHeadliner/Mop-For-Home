@@ -92,46 +92,42 @@ async function renderProducts() {
   });
 }
 
-// Викликаємо функцію рендерингу товарів
+
 renderProducts(); 
  
  
 
-    // Отримуємо всі питання FAQ
-    const questions = document.querySelectorAll('.faq__question');
+ 
+const questions = document.querySelectorAll('.faq__question');
+
+questions.forEach(question => {
   
-    questions.forEach(question => {
-      // Отримуємо іконки і контент для кожного питання
-      const plusIcon = question.querySelector('.faq__icon-plus');
-      const minusIcon = question.querySelector('.faq__icon-minus');
-      const content = question.querySelector('.faq__question-content');
-  
-      // Додаємо слухача події на натискання питання
-      question.querySelector('.faq__question-top').addEventListener('click', function () {
-        // Перемикаємо клас 'open' для контенту, щоб показати чи сховати його
-        content.classList.toggle('open');
-  
-        if (content.classList.contains('open')) {
-          content.style.maxHeight = content.scrollHeight + 'px'; // Відкриття анімації
-          content.style.opacity = '1'; // Плавний перехід для видимості
-          plusIcon.style.display = 'none'; // Ховаємо іконку плюс
-          minusIcon.style.display = 'block'; // Показуємо іконку мінус
-        } else {
-          content.style.maxHeight = '0'; // Закриття анімації
-          content.style.opacity = '0'; // Плавний перехід для видимості
-          plusIcon.style.display = 'block'; // Показуємо іконку плюс
-          minusIcon.style.display = 'none'; // Ховаємо іконку мінус
-        }
-      });
-    });
+  const plusIcon = question.querySelector('.faq__icon-plus');
+  const minusIcon = question.querySelector('.faq__icon-minus');
+  const content = question.querySelector('.faq__question-content');
 
   
+  question.querySelector('.faq__question-top').addEventListener('click', function () {
+    
+    content.classList.toggle('open');
+    question.classList.toggle('open'); 
 
-
-
-
-
-
+    if (content.classList.contains('open')) {
+      content.style.maxHeight = content.scrollHeight + 'px'; 
+      content.style.opacity = '1'; 
+      plusIcon.style.display = 'none'; 
+      minusIcon.style.display = 'block'; 
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px'; 
+      content.style.opacity = '0'; 
+      setTimeout(() => {
+        content.style.maxHeight = '0'; 
+      }, 10); 
+      plusIcon.style.display = 'block'; 
+      minusIcon.style.display = 'none'; 
+    }
+  });
+});
 
 
 

@@ -117,18 +117,20 @@
     
    &__question{ 
      border-radius: 12px; 
-     background-color: #F7F8FB; 
+     background-color: #F7F8FB;
      border: 1px solid sandybrown; 
-     transition:  0.8s linear;
+     transition:  0.8s linear; 
+     padding: 15px 20px; 
+     margin-bottom: 20px;
    } 
     
    &__question-top{ 
      display: flex; 
      justify-content: space-between; 
-     align-items: center;
+     align-items: center; 
+     margin-bottom: 15px;
    } 
     
-   /* Сховати контент спочатку */
  &__question-content {
     display: none;
     overflow: hidden;
@@ -138,21 +140,24 @@
     transition: 0.8s linear; 
   }
   
-  /* Стили для відкритого контенту */
   &__question-content.open {
     display: block;
-    max-height: 200px; /* Задай максимальну висоту під свій контент */
     opacity: 1;
+  } 
+   
+  &__question.open{ 
+       background-color:#D7ECEC;
   }
   
-  /* Іконка плюс буде видимою за замовчуванням */
+  
   &__icon-plus {
-    display: block;
+    display: block; 
+    cursor: pointer;
   }
   
-  /* Іконка мінус спочатку схована */
   &__icon-minus {
-    display: none;
+    display: none; 
+    cursor: pointer;
   }
   
 
